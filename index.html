@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Aluminum Can Draw & Ironing Progression Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Aluminum Beverage Can Tooling Progression</h1>
+
+        <label>Coil Thickness (mm)</label>
+        <input type="number" step="0.001" id="coilThickness" value="0.247" />
+
+        <label>Punch Size (mm)</label>
+        <input type="number" step="0.001" id="punchSize" value="53.066" />
+
+        <label>Cup Wall Thickness Increase Rate</label>
+        <input type="number" step="0.01" id="increaseRate" value="1.1" />
+
+        <button onclick="calculate()">Calculate Progression</button>
+
+        <div class="results" id="results" style="display:none;">
+            <div class="result-item" id="redraw"></div>
+            <div class="result-item" id="ring1"></div>
+            <div class="result-item" id="ring2"></div>
+            <div class="result-item" id="ring3"></div>
+        </div>
+
+        <footer>
+            Draw & Ironing (D&I) calculation – Made by Shahzad Fareed
+        </footer>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
